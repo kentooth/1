@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="1"></p>
+    <p id="2"></p>
+    <br>
+    <p id="before"></p>
+    <p id="after"></p>
+    <p id="sum"></p>
+      <script>
+       var  n1= prompt("Enter a number: ");
+      var  n2= prompt("Enter 2nd number: ");
+      var x= parseInt(n1);
+      var y = parseInt(n2);
+       document.getElementById('1').innerHTML = "1st number: "+n1;
+       document.getElementById('2').innerHTML = "2nd number: "+n2;
+      document.getElementById('before').innerHTML = "number before swap: "+n1 + " and " + n2;
+      [x,y]=[y,x]
+    
+  
+
+      document.getElementById('after').innerHTML = "number after swap: "+x + " and " + y;
+    
+    
+      var sum = x+y;
+    document.getElementById('sum').innerHTML = "The sum of two number is: "+ sum ;
+
+</script>
+    
+</body>
+</html>
